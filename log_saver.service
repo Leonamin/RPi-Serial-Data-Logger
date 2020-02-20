@@ -1,0 +1,10 @@
+[Unit]
+Description=CTK log saver
+
+[Service]
+Type=oneshot
+ExecStart=/etc/log_saver/log_saver.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
